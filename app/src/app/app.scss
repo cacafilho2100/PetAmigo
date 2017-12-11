@@ -1,0 +1,93 @@
+.platform-android {
+    ion-navbar{
+        height: 82px;
+        padding-top: 28px !important;
+        padding-right: 16px !important; 
+    }
+}
+
+ion-content {
+  background-color: #f5f5f5 !important;
+}
+
+ion-card.listagem{
+  margin: 10px auto 15px auto !important;
+  max-width: 350px;
+
+  img {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: auto;
+  }
+
+  ion-item {
+    margin: auto 10px auto 10px !important;
+    line-height: 1.4 !important;
+  }
+}
+
+ion-list-header{
+  font-size: 16px !important;
+  margin-bottom: 0px !important;
+}
+
+ion-list{
+  margin-bottom: 5px !important;
+}
+
+ion-item{
+   background-color: rgba(255,255,255,0) !important;
+   padding-left: 0px !important;
+}
+
+.has-refresher .scroll-content{
+    border-top: 0 !important;
+}
+
+.scroll-content {
+   overflow-y: auto;
+}
+
+.highlight{
+   background-color: #eee !important;
+}
+
+.space5{ height: 5px !important }
+.space15{ height: 15px !important }
+.space45{ height: 45px !important }
+
+.space-15{ margin-top: -15px !important }
+
+.item-input{
+   border-bottom: 1px solid #dddddd;
+}
+
+ ion-buttons button[icon-only].backbutton-modal {
+   margin: 0 6px;
+   min-width: 36px;
+}
+
+// Alert para Select
+.alert-wrapper{
+   min-width: 325px !important;
+   max-width:  calc(100vw - 10em) !important;
+   max-height: 90vh !important;
+   overflow: auto !important;
+}
+.alert-input-group, .alert-head{
+   padding-bottom: 0px !important;
+}
+.alert-button-group{
+   min-height: 50px !important;
+}
+
+ion-popover.select-popover{
+   .input-wrapper{
+      padding-left: 10px !important;   
+   }
+   ion-radio .radio-icon{
+      display: none !important;
+   }
+}

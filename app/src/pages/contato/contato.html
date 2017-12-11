@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Contato</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+   <ion-card text-center>
+      <img class="logo-contato" src="assets/icon/icon.png" />
+      <ion-card-content>
+         <ion-card-title class="title-contato">
+            Para mais informações,<br>entre em contato em nossos canais!<br><br>
+            
+            <button ion-button round outline color="petamigo" (click)="openTES('tel:', telefone)">{{telefone}}</button><br><br>
+            <button ion-button round outline color="petamigo" (click)="openTES('mailto:', email)">{{email}}</button><br><br>
+            <button ion-button round outline color="petamigo" (click)="openTES('', 'http://localhost:8080/' + site)">{{site}}</button><br>
+         
+            <ion-grid>
+              <ion-row>
+                <ion-col> <img src="assets/icon/facebook.png" (click)="openTES('', facebook)"> </ion-col>
+                <ion-col> <img src="assets/icon/twitter.png" (click)="openTES('', twitter)"> </ion-col>
+                <ion-col> <img src="assets/icon/instagram.png" (click)="openTES('', instagram)"> </ion-col>
+              </ion-row>
+            </ion-grid>
+           
+            Contribua para uma causa maior!<br>;D
+         </ion-card-title>
+         <br>
+      </ion-card-content>
+   </ion-card>
+</ion-content>

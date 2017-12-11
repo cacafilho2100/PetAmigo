@@ -1,0 +1,44 @@
+<ion-content padding>
+  <ion-list>
+    <form (ngSubmit)="loginEmail()" [formGroup]="loginForm">
+      <ion-card>
+        <img class="logo-login" src="assets/icon/icon.png">
+
+        <div class="space15"></div>
+
+        <ion-item>
+          <ion-label stacked>Login</ion-label>
+          <ion-input formControlName="email" type="email" placeholder="Login" maxlength="255"></ion-input>
+        </ion-item>
+
+        <div class="space15"></div>
+
+        <ion-item>
+          <ion-label stacked>Senha</ion-label>
+          <ion-input formControlName="password" type="password" placeholder="Senha" maxlength="255"></ion-input>
+        </ion-item>
+
+        <div class="space15"></div>
+
+        <button ion-button round full type="submit" color="petamigo" [disabled]="!loginForm.valid">Entrar</button>
+
+        <div class="space15"></div>
+        
+        <button type="button" ion-button icon-left round full (click)="loginFacebook()">
+           <ion-icon name="logo-facebook"></ion-icon>
+           Entrar com o Facebook
+        </button>
+        
+        <div class="space5"></div>
+        
+        <button type="button" ion-button icon-left round full color="danger" (click)="loginGooglePlus()">
+           <ion-icon name="logo-google"></ion-icon>
+           Entrar com o Google
+        </button>
+        
+        <div class="space5"></div>
+        
+      </ion-card>
+    </form>
+  </ion-list>
+</ion-content>

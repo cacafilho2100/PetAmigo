@@ -1,0 +1,4 @@
+1- (mvc)controller-> regra de negocios 
+   (mvc)model -> classes responsaveis do envio da regra de negocio pro banco(responsavel pela persistencia de dados)
+              -> GenericDAO -> Classe generica responsavel pela persistencia e recuperacao de dados
+   jpa-> classe do hibernate, onde possui os padroes singleton e factory. onde tem os metodos de abrir transacao, comitar, fechar transacao e dar rollback

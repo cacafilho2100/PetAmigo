@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cruzar
+    </ion-title>
+    
+    <ion-buttons end>
+      <button icon-only ion-button (tap)="this.global.presentMenuPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-refresher (ionRefresh)="this.global.doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  
+  <div *ngFor="let p of this.userData.cruzar">
+      <ion-card class="listagem" text-wrap>
+         <img src="{{p.foto.name ? p.foto.name:' '}}">
+
+         <ion-item> 
+           <b>Nome:</b> {{p.nome}}<br>
+           <b>Idade:</b> {{p.idade}}<br>
+           <b>Porte:</b> {{p.porte}}<br>
+           <b>Pelagem:</b> {{p.pelagem}}<br>
+           <b>Raça:</b> {{p.raca}}<br>
+           <b>Sexo:</b> {{p.sexo}}<br>
+           <div *ngIf="p.informacoes"><b>Descrição:</b> {{p.informacoes}}<br></div>
+          </ion-item>
+      </ion-card>
+   </div>
+
+</ion-content>

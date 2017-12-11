@@ -1,0 +1,5 @@
+1- o que é jsp? e aonde é ele executado?
+2- em qual pasta terei que colocar o arquivo .jsp e em qual pasta colocar o arquivo de tag customizada.
+3- qual codigo que faz o navegador entender que um arquivo .jsp é um arquivo .xml?  (Escreve no arquivo xml).
+4- fazer um jsf de boas vindas.
+5- tag customizada de boas vindas.
